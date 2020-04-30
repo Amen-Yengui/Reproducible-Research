@@ -46,7 +46,7 @@ colnames(sumSteps)<- c("Date", "Steps")
 hist(sumSteps$Steps, breaks=10, xlab="Steps", main = "Total Steps per day")
 ```
 
-![Histogram 1](PA1_template_files/figure-markdown_github/project%201b-1.png)
+![Histogram 1](figure-markdown/project%201b-1.png)
 
 Mean and Median
 
