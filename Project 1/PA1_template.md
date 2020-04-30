@@ -74,7 +74,7 @@ names(meanByInterval) <- c("interval", "mean")
 plot(meanByInterval$interval, meanByInterval$mean, type='l', col="red", lwd=3, xlab="Interval (minutes)", ylab="Average steps", main="Average steps per interval")
 ```
 
-![Activity Pattern 1](PA1_template_files/figure-markdown_github/project%201d-1.png)
+![Activity Pattern 1](figure-markdown/project%201d-1.png)
 
 Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 -------------------------------------------------------------------------------------------------------------
@@ -120,7 +120,7 @@ colnames(sumSteps2)<- c("Date", "Steps")
 hist(sumSteps2$Steps, breaks=10, xlab="Steps", main = "Total Steps per day")
 ```
 
-![Histogram 2](PA1_template_files/figure-markdown_github/project%201h-1.png)
+![Histogram 2](figure-markdown/project%201h-1.png)
 
 Mean and Median
 
@@ -145,7 +145,7 @@ hist(sumSteps$Steps, breaks=10, col="Blue", add=T)
 legend("topright", c("Filled data", "Cleaned data"), fill=c("red", "blue") )
 ```
 
-![Histogram 3](PA1_template_files/figure-markdown_github/project%201j-1.png)
+![Histogram 3](figure-markdown/project%201j-1.png)
 
 Are there differences in activity patterns between weekdays and weekends?
 -------------------------------------------------------------------------
@@ -160,6 +160,6 @@ colnames(activityMean)<-c("dayType","interval","steps")
 xyplot(steps ~ interval | dayType, activityMean, type="l", lwd=2, xlab="Interval", ylab="Number of steps", layout=c(1,2))
 ```
 
-![Lattice plot 1](PA1_template_files/figure-markdown_github/project%201k-1.png)
+![Lattice plot 1](figure-markdown/project%201k-1.png)
 
 It can be seen that activity trends do differ based on weekday or weekend
